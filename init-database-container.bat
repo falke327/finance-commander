@@ -11,7 +11,7 @@ docker pull postgres:alpine
 docker network create fc-db
 :: creates docker network
 
-docker run --name fc-dev -p 5432:5432 --network=fc-db -v "${PWD}:/var/lib/postgresql/data" -e POSTGRES_PASSWORD=password -d postgres:alpine
+docker run --name fc-dev -p 5432:5432 --network=fc-db -v "%cd%:/var/lib/postgresql/data" -e POSTGRES_PASSWORD=password -d postgres:alpine
 :: runs a docker container
 :: - named fc-dev
 :: - forwarding local port 5432 to container port 5432
@@ -21,5 +21,5 @@ docker run --name fc-dev -p 5432:5432 --network=fc-db -v "${PWD}:/var/lib/postgr
 :: - runs the container in detached mode
 :: - uses latest postgres:alpine image
 
-docker ps
+docker ps -a
 :: shows if container is up and running
