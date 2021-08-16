@@ -1,0 +1,1 @@
+CREATE DATABASE finance_commander OWNER finance_commander;
