@@ -12,7 +12,11 @@ public class BankService {
     private final BankRepository bankRepository;
 
     public List<Bank> getAllBanks() {
-        return bankRepository.findAll();
+        return this.bankRepository.findAll();
     }
 
+    public void addBank(Bank bank) {
+        // check if bank is already existing
+        this.bankRepository.save(bank);
+    }
 }
