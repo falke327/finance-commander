@@ -1,6 +1,8 @@
 docker --version
 :: checks docker version
 
+cd ..
+cd ..
 mkdir db-data
 cd db-data
 :: create local directory to store the data for local development database
