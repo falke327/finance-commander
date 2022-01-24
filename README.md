@@ -18,8 +18,10 @@ Create categories and insert transaction data.
 
 ## Planned Features
 - Tracking and reporting of checking accounts
+  - MEMO: We need Raw-Tables and transfer status
 - Tracking and reporting of deposit portfolio development
 - Monthly upload of statements and automatically insert into database.
+  - MEMO: Import-Tables and import status 
 
 ## Build
 coming soon
