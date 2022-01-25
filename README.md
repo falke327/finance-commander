@@ -18,8 +18,10 @@ Create categories and insert transaction data.
 
 ## Planned Features
 - Tracking and reporting of checking accounts
+  - MEMO: We need Raw-Tables and transfer status
 - Tracking and reporting of deposit portfolio development
 - Monthly upload of statements and automatically insert into database.
+  - MEMO: Import-Tables and import status 
 
 ## Build
 coming soon
@@ -41,4 +43,4 @@ in the same step. You need to execute the commands in `/src/main/resources/db/in
 can leave all the other database operations to flyway.
 You only need to do this on the first time you are going to use the database.
 
-Flyway will perform all commands provided in `/src/main/resources/db/migration` when `mvn clean install` is executed.
+Flyway will perform all commands provided in `/src/main/resources/db/migration` on application start up.
