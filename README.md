@@ -18,15 +18,21 @@ Create categories and insert transaction data.
 
 ## Planned Features
 - Tracking and reporting of checking accounts
-  - MEMO: We need Raw-Tables and transfer status
+  - MEMO: We need transfer status table for moving data from raw to working table
+  - We need a postgres procedure for moving approved data
 - Tracking and reporting of deposit portfolio development
 - Monthly upload of statements and automatically insert into database.
   - MEMO: Import-Tables and import status 
 
 ## Build
-coming soon
+JDK 17.0.1 or higher is recommended.
+To build the application right now you can simply use `mvn clean package`
 
 ## Run
+JDK 17.0.1 or higher is recommended.
+To run the application locally on your system take the finance-commander-x.x.x.jar from your build.
+Make sure your database is up and running.
+Run the application using `java -jar finance-commander-x.x.x.jar`
 
 ### PostgreSQL Docker Container
 I highly recommend using a postgres docker container as database in development mode.
